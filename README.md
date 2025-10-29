@@ -1,10 +1,10 @@
-# Quarkus LangChain4j Project
+# langchain4j-and-quarkus
 
 Este é um projeto Quarkus com integração do LangChain4j para trabalhar com IA.
 
 ## Pré-requisitos
 
-- Java 17 ou superior
+- Java 25 ou superior
 - Maven 3.8+ ou superior
 
 ## Executar o projeto
@@ -47,5 +47,3 @@ Configure sua chave da API OpenAI no arquivo `application.properties` ou atravé
 
 - [Quarkus Guide](https://quarkus.io/guides/)
 - [LangChain4j Documentation](https://docs.langchain4j.dev/)
-
-"# langchain4j-and-quarkus" 
