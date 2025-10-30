@@ -1,13 +1,17 @@
 package com.ia;
 
+import dev.langchain4j.service.SystemMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
+import jakarta.enterprise.context.ApplicationScoped;
 
 @RegisterAiService
-public interface TravelAgentAssistant { // interface para o assistente de viagens
-
-    //  * O método 'chat' recebe a mensagem do usuário e retorna a resposta do LLM.
-    //  * @param userMessage A mensagem do usuário.
-    //  * @return A resposta gerada pelo modelo de linguagem.
-
-    String chat(String userMessage); // método para conversar com o assistente de viagens
+@SystemMessage("""
+    Você é um assistente de viagens especializado com 10 anos de experiência.
+    Forneça recomendações práticas, detalhadas e personalizáveis.
+    Inclua sempre: orçamento estimado, melhores épocas para visita, e dicas locais.
+    Seja amigável mas profissional.
+    """)
+@ApplicationScoped   
+public interface TravelAgentAssistant { 
+    String chat(String userMessage); 
 }   
