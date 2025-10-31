@@ -1,10 +1,10 @@
 # langchain4j-and-quarkus
 
-Este é um projeto Quarkus com integração do LangChain4j para trabalhar com IA.
+Este é um projeto Quarkus com integração do LangChain4j para trabalhar com IA utilizando Easy-RAG e Ollama.
 
 ## Pré-requisitos
 
-- Java 25 ou superior
+- Java 21 ou superior
 - Maven 3.8+ ou superior
 
 ## Executar o projeto
@@ -41,7 +41,9 @@ Configure sua chave da API OpenAI no arquivo `application.properties` ou atravé
 
 ## Endpoints
 
-- GET /hello - Endpoint básico de exemplo
+```sh
+curl -X POST -H "Content-Type: text/plain" -d "Estou planejando uma viagem para o Japão, qual melhor época?" http://localhost:8080/travel
+```
 
 ## Documentação
 
